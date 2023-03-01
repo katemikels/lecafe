@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lecafe Desserts</title>
+    <style>
+        .image {
+	        position: relative;
+            width: 400px;
+        }
+
+        .image__img {
+            display: block;
+            width: 100%;
+        }
+
+        .image__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+
+        .image__overlay>* {
+            transform: translateY(20px);
+            transition: transform 0.25s;
+        }
+
+        .image__overlay:hover {
+            opacity: 1;
+        }
+
+        .image__overlay:hover>* {
+            transform: translateY(0);
+        }
+
+        .image__title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .image__description {
+            font-size: 1.25em;
+            margin-top: 0.25em;
+        }
+        ul li {
+            list-style: none;
+            display: inline-block;     
+        }
+        ul li a{
+            text-decoration: none;
+            font-size: 14px;
+            color:rgb(0, 0, 0);
+            padding: 0 20px;
+        }
+        ul li a:hover{
+            color: rosybrown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desserts!</h1>
+    <h3>What some YUMMY Desserts after meal?</h3>
+	<div class="image">
+		<img class="image__img" src="https://www.hersheyland.com/content/dam/hersheyland/en-us/recipes/recipe-images/366-chocolate-dessert-waffles.jpg" alt="chocolate waffles">
+		<div class="image__overlay image__overlay--primary">
+			<div class="image__title">Chocolate Waffle</div>
+			<p class="image__description">
+				$10
+			</p>
+		</div>
+	</div>
+    <br>
+    <div class="image">
+        <img class="image__img" src="https://www.foodandwine.com/thmb/xpV_7tJxFnKM5TrzV_rqIWpuix4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chocolate-cupcakes-FT-RECIPE1221-e7e99dee29ad4a9db7a169d7c41f4f79.jpg" alt="chocolate cupcakes">
+		<div class="image__overlay image__overlay--primary">
+			<div class="image__title">Cupcakes</div>
+			<p class="image__description">
+				$3
+			</p>
+		</div>
+    </div>
+    <br>
+    <div class="image">
+        <img class="image__img" src="https://img.taste.com.au/xi2t8DpL/taste/2016/11/lemon-panna-cotta-with-vodka-blueberry-syrup-92005-1.jpeg" alt="putting">
+		<div class="image__overlay image__overlay--primary">
+			<div class="image__title">Putting</div>
+			<p class="image__description">
+				$5
+			</p>
+		</div>
+    </div>
+    <br>
+    <div class="image">
+        <img class="image__img" src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2020/03/05/0/FNK_No-Bake-Cheesecake_H1_s4x3.jpg.rend.hgtvcom.441.331.suffix/1583433467316.jpeg" alt="cheesecake">
+		<div class="image__overlay image__overlay--primary">
+			<div class="image__title">Cheesecake</div>
+			<p class="image__description">
+				$7
+			</p>
+		</div>
+    </div>
+    <br>
+    <ul>
+        <li><a href = "appetizer-carl.html">Appetizers</a></li>
+        <li><a href = "soup-salad.html">Soup & Salads</a></li>
+        <li><a href = "#">Entrees</a></li>
+        <li><a href = "le_cafe.html">Main Page</a></li>
+    </ul>
+</body>
+</html>
